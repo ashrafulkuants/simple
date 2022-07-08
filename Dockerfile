@@ -23,4 +23,5 @@ RUN rm -rf ./*
 
 COPY --from=build-stage /usr/app/build .
 
+COPY default.conf /etc/nginx/conf.d/
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
