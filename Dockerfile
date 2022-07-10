@@ -1,13 +1,36 @@
-FROM node:lts-alpine as build 
+# FROM node:lts-alpine as build 
 
+# WORKDIR /app
+
+# COPY package.json .
+# RUN npm install 
+# COPY . .
+# RUN npm run build
+
+# FROM nginx
+# COPY ./nginx/nginx.conf /etc/nginx/nginx.conf 
+
+# COPY --from=build /app/build /usr/share/nginx/html 
+
+# base image
+FROM node:14.17.0 as react-build
 WORKDIR /app
+COPY . ./
+RUN yarn
+RUN yarn build
 
-COPY package.json .
-RUN npm install 
-COPY . .
-RUN npm run build
+# stage: 2 — the production environment
+FROM nginx:alpine
 
-FROM nginx
+COPY --from=react-build /app/build /usr/share/nginx/html/
+
+RUN mkdir /etc/letsencrypt
+
+EXPOSE 8080
+
+# COPY default.conf /etc/nginx/conf.d/
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf 
 
-COPY --from=build /app/build /usr/share/nginx/html 
+
+CMD ["nginx", "-g", "daemon off;"]
+
