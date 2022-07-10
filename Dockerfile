@@ -1,6 +1,6 @@
 #stage 1
 #build docker image of react app
-FROM node:14.17.0 AS build-stage
+FROM node:14.17.0 as build-stage
 #set working directory
 RUN mkdir /usr/app
 
@@ -21,8 +21,8 @@ WORKDIR /usr/share/nginx/html
 
 RUN rm -rf ./*
 
-# COPY --from=build-stage /usr/app/build usr/share/nginx/html
-COPY --from=build-stage usr/app/build/ /usr/share/nginx/html
-COPY default.conf /etc/nginx/conf.d/
+COPY --from=build-stage /usr/app/build .
+
+COPY default.conf /usr/etc/nginx/conf.d/
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
