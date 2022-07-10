@@ -1,28 +1,13 @@
-#stage 1
-#build docker image of react app
-FROM node:14.17.0 as build-stage
-#set working directory
-RUN mkdir /usr/app
+FROM node:lts-alpine as build 
 
-COPY . /usr/app
+WORKDIR /app
 
-WORKDIR /usr/app
-
-RUN yarn
-
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
-
+COPY package.json .
+RUN npm install 
+COPY . .
 RUN npm run build
 
-#Stage 2 
-FROM nginx:alpine
+FROM nginx
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf 
 
-WORKDIR /usr/share/nginx/html
-
-RUN rm -rf ./*
-
-COPY --from=build-stage /usr/app/build .
-
-COPY default.conf /usr/etc/nginx/conf.d/
-
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+COPY --from=build /app/build /usr/share/nginx/html 
