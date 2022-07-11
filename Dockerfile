@@ -24,13 +24,11 @@ FROM nginx:alpine
 
 COPY --from=react-build /app/build /usr/share/nginx/html/
 
-RUN mkdir /etc/letsencrypt
 
 EXPOSE 8080
 
 # COPY default.conf /etc/nginx/conf.d/
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf 
-
+COPY /nginx/nginx.conf /etc/nginx/conf.d
 
 CMD ["nginx", "-g", "daemon off;"]
 
