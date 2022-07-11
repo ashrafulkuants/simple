@@ -25,10 +25,10 @@ FROM nginx:alpine
 COPY --from=react-build /app/build /usr/share/nginx/html/
 
 
-EXPOSE 8080
+EXPOSE 8000
 
 # COPY default.conf /etc/nginx/conf.d/
-COPY /nginx/nginx.conf /etc/nginx/conf.d
+COPY /nginx/nginx.conf /etc/nginx/conf.d/
 
 CMD ["nginx", "-g", "daemon off;"]
 
