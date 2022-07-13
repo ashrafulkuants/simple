@@ -3,7 +3,7 @@ FROM node:14.17.0 as react-build
 WORKDIR /app
 COPY . ./
 RUN yarn
-RUN yarn build
+RUN yarn build 
 
 # stage: 2 — the production environment
 FROM nginx:alpine
