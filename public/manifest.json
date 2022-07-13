@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Kuants",
+  "name": "Algo Trading India | Free Backtest | Automated Algorithms",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./assets/footer_logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -17,9 +17,13 @@
       "type": "image/png",
       "sizes": "512x512"
     }
+    
   ],
-  "start_url": ".",
+  "start_url": "kuants.in",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#4184f3",
+  "background_color": "#4184f3"
 }
+
+
+

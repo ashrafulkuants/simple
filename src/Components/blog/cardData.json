@@ -1,0 +1,207 @@
+[
+ {
+   "category": "Intro to Stock Markets",
+   "title": "What is stock market?",
+   "link": "Intro-to-Stock-Markets/What-is-stock-market"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "What is a Stock Exchange?",
+   "link": "Intro-to-Stock-Markets/What-is-a-Stock-Exchange"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "What is Sensex, Nifty ?",
+   "link": "Intro-to-Stock-Markets/What-is-Sensex,-Nifty"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "Why to companies list on Exchange?",
+   "link": "Intro-to-Stock-Markets/Why-to-companies-list-on-Exchange"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "Why price of companies change ?",
+   "link": "Intro-to-Stock-Markets/Why-price-of-companies-change"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "What is demat and trading account ?",
+   "link": "Intro-to-Stock-Markets/What-is-demat-and-trading-account"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "Why is difference between stock and shares? ",
+   "link": "Intro-to-Stock-Markets/Why-is-difference-between-stock-and-shares"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "What is NSE and BSE",
+   "link": "Intro-to-Stock-Markets/What-is-NSE-and-BSE"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "How many types of orders are there?",
+   "link": "Intro-to-Stock-Markets/How-many-types-of-orders-are-there"
+ },
+ {
+   "category": "Intro to Stock Markets",
+   "title": "What is short selling ?",
+   "link": "Intro-to-Stock-Markets/What-is-short-selling"
+ },
+ {
+   "category": "Equities, Futures and Options",
+   "title": "What is a market segment",
+   "link": "Equities,-Futures-and-Options/What-is-a-market-segment"
+ },
+ {
+   "category": "Equities, Futures and Options",
+   "title": "What is Leverage and Margins in Stock Markets",
+   "link": "Equities,-Futures-and-Options/What-is-Leverage-and-Margins-in-Stock-Markets"
+ },
+ {
+   "category": "Equities, Futures and Options",
+   "title": "What is Equities",
+   "link": "Equities,-Futures-and-Options/What-is-Equities"
+ },
+ {
+   "category": "Equities, Futures and Options",
+   "title": "What is Futures",
+   "link": "Equities,-Futures-and-Options/What-is-Futures"
+ },
+ {
+   "category": "Equities, Futures and Options",
+   "title": "What are Options",
+   "link": "Equities,-Futures-and-Options/What-are-Options"
+ },
+ {
+   "category": "Equities, Futures and Options",
+   "title": "What is Risk Management?",
+   "link": "Equities,-Futures-and-Options/What-is-Risk-Management"
+ },
+ {
+   "category": "Equities, Futures and Options",
+   "title": "What are Currencies?",
+   "link": "Equities,-Futures-and-Options/What-are-Currencies"
+ },
+ {
+   "category": "Equities, Futures and Options",
+   "title": "What is Crypto?",
+   "link": "Equities,-Futures-and-Options/What-is-Crypto"
+ },
+ {
+   "category": "Trading and Investing",
+   "title": "What is investing ",
+   "link": "Trading-and-Investing/What-is-investing"
+ },
+ {
+   "category": "Trading and Investing",
+   "title": "Difference between tradig and investing",
+   "link": "Trading-and-Investing/Difference-between-tradig-and-investing"
+ },
+ {
+   "category": "Trading and Investing",
+   "title": "How do decide among investing and trading ",
+   "link": "Trading-and-Investing/How-do-decide-among-investing-and-trading"
+ },
+ {
+   "category": "Trading and Investing",
+   "title": "How is trading done ",
+   "link": "Trading-and-Investing/How-is-trading-done-"
+ },
+ {
+   "category": "Trading and Investing",
+   "title": "How is investing done ",
+   "link": "Trading-and-Investing/How-is-investing-done"
+ },
+ {
+   "category": "Trading and Investing",
+   "title": "Fundamental Analysis",
+   "link": "Trading-and-Investing/Fundamental-Analysis"
+ },
+ {
+   "category": "Trading and Investing",
+   "title": "Technical Analysis",
+   "link": "Trading-and-Investing/Technical-Analysis"
+ },
+ {
+   "category": "Intro to Algo trading",
+   "title": "Benefits of Algorithmic Trading",
+   "link": "Intro-to-Algo-trading/Benefits-of-Algorithmic-Trading"
+ },
+ {
+   "category": "Intro to Algo trading",
+   "title": "What is Algorithmic Trading",
+   "link": "Intro-to-Algo-trading/What-is-Algorithmic-Trading"
+ },
+ {
+   "category": "Intro to Algo trading",
+   "title": "Components of Strategy",
+   "link": "Intro-to-Algo-trading/Components-of-Strategy"
+ },
+ {
+   "category": "Intro to Algo trading",
+   "title": "How to Write Algorithms ",
+   "link": "Intro-to-Algo-trading/How-to-Write-Algorithms"
+ },
+ {
+   "category": "Intro to Algo trading",
+   "title": "What is backtesting ",
+   "link": "Intro-to-Algo-trading/What-is-backtesting"
+ },
+ {
+   "category": "Intro to Algo trading",
+   "title": "Importance of Backtesting",
+   "link": "Intro-to-Algo-trading/Importance-of-Backtesting"
+ },
+ {
+   "category": "Intro to Algo trading",
+   "title": "How is Algo Trading Different from Manual Trading",
+   "link": "Intro-to-Algo-trading/How-is-Algo-Trading-Different-from-Manual-Trading"
+ },
+ {
+   "category": "Intro to Algo trading",
+   "title": "SEBI regulations on Algo Trading",
+   "link": "Intro-to-Algo-trading/SEBI-regulations-on-Algo-Trading"
+ },
+ {
+   "category": "Building Algorithms ",
+   "title": "What are the components of Algos",
+   "link": "Building-Algorithms/What-are-the-components-of-Algos"
+ },
+ {
+   "category": "Building Algorithms ",
+   "title": "Ideating trading strategies",
+   "link": "Building-Algorithms/Ideating-trading-strategies"
+ },
+ {
+   "category": "Building Algorithms ",
+   "title": "What is slippage and why is it important ",
+   "link": "Building-Algorithms/What-is-slippage-and-why-is-it-important"
+ },
+ {
+   "category": "Building Algorithms ",
+   "title": "How to Analyse Returns and improve strategy performance ",
+   "link": "Building-Algorithms/How-to-Analyse-Returns-and-improve-strategy-performance"
+ },
+ {
+   "category": "Building Algorithms ",
+   "title": "Understanding Overfitting bias ",
+   "link": "Building-Algorithms/Understanding-Overfitting-bias"
+ },
+ {
+   "category": "Building Algorithms ",
+   "title": "Breaking down transaction costs and their importance",
+   "link": "Building-Algorithms/Breaking-down-transaction-costs-and-their-importance"
+ },
+ {
+   "category": "Building Algorithms ",
+   "title": "What is OHLC data",
+   "link": "Building-Algorithms/What-is-OHLC-data"
+ },
+ {
+   "category": "Building Algorithms ",
+   "title": "Understanding basics of Backtesting",
+   "link": "Building-Algorithms/Understanding-basics-of-Backtesting"
+ }
+]

@@ -1,4 +1,3 @@
-
 # base image
 FROM node:14.17.0 as react-build
 WORKDIR /app
@@ -11,10 +10,12 @@ FROM nginx:alpine
 
 COPY --from=react-build /app/build /usr/share/nginx/html/
 
+# RUN mkdir /etc/letsencrypt
 
-RUN rm /etc/nginx/conf.d/default.conf
-COPY /nginx/nginx.conf /etc/nginx/conf.d/
 EXPOSE 80
 
+COPY default.conf /etc/nginx/conf.d/
+
 CMD ["nginx", "-g", "daemon off;"]
+
 

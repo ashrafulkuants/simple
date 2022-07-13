@@ -1,38 +1,2657 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+.centered-heading{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type='submit'] {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-primary {
+  background: #0d6efd;
+  border: none;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Toastify__progress-bar {
+  background: #683FDB !important;
+
+}
+
+.Toastify__toast-icon svg {
+  fill: #683FDB;
+}
+
+.Toastify__toast--error .Toastify__toast-icon {
+  display: none;
+}
+
+.landing-container {
+  margin: 1.9vw 6.60vw 0 6.60vw;
+}
+
+.flex {
+  display: flex;
+}
+
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.43vw 6.60vw 1.43vw 8.88vw;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5vw;
+  z-index: 3;
+}
+
+.main-logo {
+  max-width: 145px;
+  max-height: 33.56px;
+  width: 11.67vw;
+  height: 2.7vw;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.menu-icon {
+  height: 6vw;
+  width: 6vw;
+  /* color: white; */
+  display: none;
+  margin-left: auto;
+
+}
+
+.cross-icon {
+  height: 10vw;
+  width: 10vw;
+  margin-top: 5vw;
+  margin-right: 5vw;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 4vw;
+  color: #252B42;
+  font-style: normal;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+}
+
+nav a:first-of-type {
+  margin-left: 0;
+}
+
+.nav-dl-btn {
+  max-width: 263px;
+  max-height: 60px;
+  width: 263px;
+  height: 60px;
+  background-color: #3F3F3F;
+  margin-left: 5vw;
+  border: 0;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Rubik';
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.active {
+  font-weight: 500;
+  color: #683FDB;
+}
+
+/* CSS for HOME PAGE */
+.about {
+  margin-left: 2vw;
+  width: 100%;
+  justify-content: space-between;
+  /* overflow: hidden; */
+
+}
+
+.triangle-icon {
+  position: absolute;
+  max-width: 286px;
+  max-height: 295px;
+  height: 22vw;
+  width: 22vw;
+  right: 0;
+  top: 160px;
+  border-radius: 0px;
+  z-index: -2;
+
+}
+
+.cylindrical-icon {
+  position: absolute;
+  max-height: 135px;
+  max-width: 135px;
+  height: 12vw;
+  right: 38vw;
+  top: 35.5vw;
+  z-index: -1;
+
+}
+
+.about-left {
+  min-width: 50%;
+}
+
+.about-left h2 {
+  margin-top: 10.416vw;
+  margin-bottom: 0;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 67px;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+.main-heading-style {
+margin-top: 0;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 67px;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.about-left p {
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #737373;
+  margin-top: 0;
+  max-width: 528px;
+
+
+}
+
+.about-btn-group {
+  margin-top: 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 1rem;
+  row-gap:1rem;
+}
+
+.about-btn-group-mobile {
+  display: none;
+}
+
+.about-btn {
+  height: 60px;
+  width: 266px;
+  max-width: 266px;
+  max-height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.about-btn-ios {
+  background: #683FDB;
+  color: #FFFFFF;
+}
+
+.about-btn-ios>p {
+  padding: 0;
+  line-height: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding-top: 2%;
+}
+
+.about-btn-android {
+  background: #FFFFFF;
+  border: 2px solid #683FDB;
+}
+
+.discovery-img {
+  max-height: 700.7676391601562px;
+  max-width: 50vw;
+  min-height: 413px;
+  min-width: 384px;
+  height: 48.61vw;
+  z-index: 3;
+
+}
+
+.mutual-funds ul {
+  list-style: none;
+  /* Remove default bullets */
+}
+
+.mfunds-main-para {
+  width: 95%;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  margin: 2.22vw 0 2.22vw 0;
+  text-align: center;
+}
+
+.heading-style-one {
+  margin-top: 0rem;
+  font-family: 'Rubik';
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+
+}
+
+.mutual-funds {
+  /* position: relative; */
+  margin-left: 2vw;
+}
+
+.mutual-funds div {
+  display: flex;
+
+}
+
+.list-container {
+  flex-wrap: wrap;
+  column-gap: 4.86vw;
+}
+
+.list-container>div {}
+
+
+.pointer p {
+  font-family: 'Rubik';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+  margin: 0;
+  /* width: 92%; */
+
+}
+
+.purple-circle {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #683FDB;
+  margin-right: 1.9vw;
+}
+
+
+.pointer {
+  align-items: baseline;
+}
+
+.group-mutual {
+  position: absolute;
+
+  height: 209px;
+  width: 202px;
+  top: 170vw;
+  left: 0vw;
+}
+
+.features {
+  margin-top: 8.4vw;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  column-gap: 10vw;
+}
+
+.card {}
+
+.card>img {
+  height: 111px;
+  width: auto;
+  display: flex;
+  margin: 0 auto;
+
+
+}
+
+.card p {
+  font-family: 'Rubik';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+  text-align: center;
+  max-width: 20.625vw;
+
+}
+
+.working {
+
+  margin-top: 9.028vw;
+  position: relative;
+}
+
+.landing-container .working {
+  margin-left: 2vw;
+}
+
+.working h2 {
+  font-weight: 500;
+}
+
+.working-one {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.working-one-image {
+  height: 45.2vw;
+  max-width: 950px;
+  max-height: 663px;
+  width: 64.36vw;
+  margin-left: 10vw;
+
+}
+
+.working-text-container {
+  position: relative;
+}
+
+.big-counter {
+  position: absolute;
+  top: -8vw;
+  left: 14vw;
+  font-family: 'Rubik';
+  font-size: 20.82vw;
+  font-weight: 700;
+  line-height: 13.89vw;
+  letter-spacing: 0px;
+  opacity: 0.1;
+  text-align: center;
+  color: #FF9900;
+  ;
+
+}
+
+.counter-top-text {
+  position: absolute;
+  top: 13.88vw;
+  left: 12vw;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.75vw;
+  line-height: 4.65vw;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #000000;
+
+}
+
+.curved-line {
+  max-height: 1113px;
+  max-width: 573px;
+  height: 80vw;
+  width: 39.86vw;
+  position: absolute;
+  right: 25.13vw;
+  top: 35vw;
+  z-index: -2;
+}
+
+.working-two {
+  /* margin-top: 10rem;}; */
+  display: flex;
+}
+
+.working-two-img {
+  width: 30.76vw;
+  /* height: 42.29vw; */
+  margin-top: 4.5rem;
+  max-width: 448px;
+  max-height: 600px;
+}
+
+.working-two .working-text-container {
+  top: 5vw;
+  left: 5vw;
+}
+
+.working-three .counter-top-text {
+  margin-left: 10vw;
+}
+
+.working-three .working-text-container {
+  top: 10vw;
+}
+
+.working-three-img {
+  max-width: 735px;
+  max-height: 764px;
+  width: 50.76vw;
+  height: 54.29vw;
+  display: flex;
+  margin-left: auto;
+  margin-right: 10vw;
+}
+
+.invest-stocks {
+  margin-top: 7vw;
+  /* text-align: center; */
+}
+
+.para-style-one {
+  /* position: absolute; */
+  margin: 0 auto;
+  max-width: 747px;
+  min-height: 77px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.stock-tech-section {
+  margin-top: 9vw;
+}
+
+.stock-tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 8vw;
+}
+
+.stock-tech-container img {
+  max-width: 650px;
+  width: 40.27vw;
+  min-width: 300px;
+}
+
+.stock-tech-container p {
+  width: 35.76vw;
+  max-width: 515px;
+  min-width: 300px;
+}
+
+.stock-tech-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stock-tech-right a {
+  margin-top: 2.22vw;
+  text-align: center;
+
+}
+
+.stock-tech-btn {
+  height: 60px;
+  width: 266px;
+  border: none;
+  background: #683FDB;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.33px;
+  letter-spacing: 0em;
+  font-style: normal;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.coming-soon-container {
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.coming-soon-container p {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 98px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  width: 372px;
+  color: #C3C3F9;
+  display: flex;
+  align-items: center;
+  margin: 0 3vw 0 7vw;
+
+}
+
+.coming-soon-container img {
+  height: 446.1600036621094px;
+  width: 442.9700012207031px;
+  border-radius: 0px;
+
+}
+
+.landing-form {
+  max-width: 974px;
+  width: 67.64vw;
+  /* height: 35.35vw; */
+  background: #E9E9E9;
+  border-radius: 20px;
+  margin: 4.3vw auto 9.23vw auto;
+  position: relative;
+}
+
+.landing-form .invest-dl-btn {
+  margin-bottom: 3.47vw;
+  max-width: 289px;
+  height: 60px;
+  width: 35.76vw;
+  background: #683FDB;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  font-style: normal;
+  color: #F6F6F9;
+  cursor: pointer;
+}
+
+.landing-contact {
+  margin-top: 8vw;
+}
+
+.landing-contact h2 {
+  max-width: 731px;
+  margin: 0 auto;
+}
+
+.landing-contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 3.43vw;
+  padding-top: 3.47vw;
+  gap: 2.23vw;
+}
+
+.landing-contact form input {
+  max-width: 421px;
+  width: 29.236vw;
+  height: 54px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 1rem;
+}
+
+.landing-contact input::placeholder,
+textarea::placeholder {
+  color: #666666;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+
+}
+
+.landing-contact form textarea {
+  width: 100vw;
+  height: 108px;
+  border: none;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+/* ABOUT */
+
+/* .about-component {
+  max-width: 1440px;
+  padding: 1.43vw 6.60vw 0 8.88vw;
+  margin: 0 auto;
+  position: relative;
+} */
+
+
+
+.philosophy h2 {
+  margin-top: 4vw;
+  text-align: left;
+}
+
+.philosophy p {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.philosophy p:first-of-type {
+  margin-bottom: 2.5vw;
+}
+
+.philosophy-vector {
+  height: 8.6vw;
+  width: 8.6vw;
+  max-width: 95px;
+  max-height: 95px;
+  margin-left: -5vw;
+}
+
+.companies-logo-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+}
+
+.companies-logo-container:first-of-type {
+  margin-bottom: 3.75vw;
+  margin-top: 5vw;
+}
+
+.companies-logo-container img {
+  width: 115px;
+  height: 57px;
+  object-fit: contain;
+}
+
+.our-team {
+  margin-bottom: 7.5vw;
+}
+
+.our-team h2:first-of-type {
+  text-align: left;
+  margin-top: 0;
+}
+
+.founder-section {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  margin-bottom: 7.5vw;
+}
+
+.founder-left {
+  max-width: 50%;
+}
+
+.founder-left .full-name {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.founder-designation {
+  font-family: 'Rubik';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.founder-info {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 574px;
+  color: #333333;
+}
+
+.founder-left button {
+  border: none;
+  background: #FFFFFF;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration-line: underline;
+  color: #3C5BB4;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 3.61vw;
+
+}
+
+.founder-img {
+  max-width: 548px;
+  max-height: 548px;
+  height: 38.05vw;
+  width: 38.05vw;
+  min-width: 350px;
+  min-height: 350px;
+  margin: auto 0 auto 0;
+}
+
+.heading-style-two {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #333333;
+}
+
+.team-sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5vw 0 5vw 0;
+  column-gap: 5vw;
+}
+
+.team-sub-container p {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333333;
+  margin-top: 0;
+}
+
+.team-sub-container h3 {
+  margin-bottom: 0px;
+}
+
+.team-sub-container img {
+  width: 340px;
+  height: 340px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* .team-sub-container:first{
+  margin-bottom: 50vw;
+} */
+
+
+
+/* TERMS AND CONDITIONS */
+
+.t-and-c {
+  max-width: 1440px;
+  width: 60vw;
+  margin: 0 auto;
+  margin-bottom: 6vw;
+}
+
+/* PARTNERS PROGRAM */
+
+.hero-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2.71vw 9.28vw 0 9.375vw;
+}
+
+.partnership-main {
+  display: flex;
+  margin-bottom: 8.33vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-m-left {
+  margin-top: auto;
+}
+
+.partner-heading {
+  text-align: left;
+  font-size: 38px;
+  /* margin-top:; */
+}
+
+.p-m-left p {
+  max-width: 591px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.p-m-left :nth-child(3) {
+  max-width: 602px;
+  margin-top: 2.22vw;
+  margin-bottom: 2.77vw;
+}
+.join-partner-btn-mobile{
+  display: none;
+}
+
+.partnership-main>img {
+  max-width: 555px;
+  max-height: 345px;
+  width: 38.54vw;
+  height: 23.96vw;
+}
+
+.benefits .heading-style-one {
+  margin-bottom: 4.16vw;
+}
+
+.b-card-container {
+  display: flex;
+  /* max-width: 973px;
+  width: 67.55vw; */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 2.77vw;
+}
+
+.b-card-container .card-title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: .695vw;
+}
+
+.b-card-container .card-content {
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #333333;
+}
+
+.benefits .card {
+  max-width: 450px;
+  width: 33.25vw;
+  text-align: center;
+  /* flex-basis: 100%;
+  min-width: 50%; */
+}
+
+.partnership-program .working {
+  margin-top: 8.195vw;
+  margin-bottom: 4.65vw;
+}
+
+.income-calc-text {
+  margin-bottom: 3.47vw;
+}
+
+.callback-container {
+  margin-bottom: 5.93vw;
+}
+
+.callback-container h2 {
+  margin-bottom: 3.57vw;
+}
+
+.callback-container form {
+  background: #E9E9E9;
+  border-radius: 1.42vw;
+  height: 9.30vw;
+  max-height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.39vw;
+}
+
+.callback-container form>input {
+  max-width: 420px;
+  width: 29.16vw;
+  max-height: 54px;
+  min-height: 30px;
+  height: 3.75vw;
+  background: #FFFFFF;
+  border-radius: 0.69vw;
+  border: none;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  color: #666666;
+
+}
+
+.callback-container form>input[type='text'],
+.callback-container form>input[type='number'] {
+  padding-left: 1.429vw;
+}
+
+.callback-container form>input[type='submit'] {
+  max-width: 214px;
+  max-height: 54px;
+  min-height: 30px;
+  width: 14.86vw;
+  height: 3.857vw;
+  background: #683FDB;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+
+/* Blogs */
+.mainArticleContainer {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 95%;
+  padding-bottom: 4vw;
+
+}
+
+.mainArticleContainer ul {
+  /* padding: 0; */
+}
+
+.mainArticleContainer>div>div {
+  display: flex;
+}
+
+.mainArticleContainer>div>div>:first-child {
+  height: fit-content;
+  margin-right: 1.5vw;
+  max-width: 220px;
+  position: sticky;
+  text-align: center;
+  top: 13vw;
+}
+
+.mainArticleContainer>div>div>:first-child li {
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 25px;
+}
+
+.mainArticleContainer>div>div>:first-child a {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.mainArticleContainer>div>div>:first-child ul {
+  padding: 0;
+  width: max-content;
+}
+
+.mainArticleContainer>div>div>:first-child img {
+  width: 6rem;
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 3.5vw;
+  margin-bottom: 2vw;
+  padding-left: 25px;
+}
+
+.breadcrumb>li>a {
+  color: #0275d8;
+}
+
+.breadcrumb>li::after {
+  content: '/';
+  padding: 0 10px;
+}
+
+.breadcrumb>li:last-child::after {
+  content: none;
+}
+
+.main-blog-style {
+  text-align: left;
+  width: 85%;
+  /* padding-bottom: ; */
+}
+
+.h12 {
+  font-size: 20px;
+  font-weight: 500;
+  /* color: #000;; */
+  margin-bottom: 3vw;
+  font-family: 'Rubik';
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.add-partner {
+  position: fixed;
+  max-width: 820px;
+  min-width: 280px;
+  width: 56.94vw;
+  max-height: 477px;
+  min-height: 300px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+  background: #FFFFFF;
+  border-radius: 1.111vw;
 }
 
-.App-link {
-  color: #61dafb;
+.partner-cross-icon {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  top: 0px;
+  right: 18px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #666666;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .add-partner .cross-icon:hover{
+
+} */
+
+.add-partner h4 {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #000000;
+  opacity: 0.8;
+  margin-top: 5.972vw;
+  margin-bottom: 0;
+}
+
+.add-partner form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.add-partner form>input,
+.input-box {
+  width: 420px;
+  height: 54px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  color: #666666;
+  margin-bottom: 1.389vw;
+  padding-left: 1.389vw;
+}
+
+.add-partner form>input[type="text"] {
+  margin-top: 2.22vw;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding-left: 10px;
+  margin-bottom: 2.778vw;
+}
+
+.input-box .prefix {
+  color: #999;
+}
+
+.input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 300;
+  padding-left: 5px;
+  color: #666666;
+}
+
+.add-partner button {
+  background: #683FDB;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  height: 54px;
+  width: 214px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-bottom: 5.625vw;
+}
+
+.add-partner button:disabled {
+  cursor: default;
+  background: #D6D6D6;
+}
+
+.otp-mainpara {
+  max-width: 424px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #666666;
+  margin-top: 20px;
+
+}
+
+.otp-mainpara span:first-child {
+  font-weight: 500;
+}
+
+.otp-mainpara span:last-child {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  margin-left: 2px;
+  color: #2775EB;
+  position: relative;
+  bottom: 1px;
+  cursor: pointer;
+}
+
+.otp-mainpara span:last-child:hover {
+  text-decoration: underline;
+}
+
+.otp-container {
+  display: flex;
+  gap: 24px;
+}
+
+.otp-container>input {
+  width: 25px;
+  padding-bottom: 8px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #333333;
+  ;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+  opacity: 0.8;
+}
+
+
+.re-otp {
+  margin-top: 1.389vw;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.083vw;
+}
+
+.re-otp p {
+  color: #333333;
+  line-height: 18px;
+  opacity: 0.8;
+  margin: 0;
+  margin-right: 2px;
+}
+
+.re-otp span {
+  cursor: pointer;
+  line-height: 15px;
+  color: #2775EB;
+}
+
+.re-otp span:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+  .partnership-program .curved-line {
+    top: 67vw;
+    height: 117vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  .callback-container form {
+    flex-direction: column;
+    height: fit-content;
+    max-height: max-content;
+    padding: 5vw 0;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .callback-container form>input {
+    height: 45px;
+    width: 90%;
+  }
+
+  .callback-container form>input[type='submit'] {
+    height: 45px;
+    width: 30vw;
+  }
+
+  .add-partner {
+    width: 90%;
+  }
+
+  .add-partner form>input,
+  .input-box input,
+  .prefix {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .partnership-program .curved-line {
+    top: 70vw;
+    height: 117vw;
+  }
+
+}
+
+@media only screen and (max-width: 300px) {
+  .partnership-program .curved-line {
+    top: 76vw;
+    height: 117vw;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .header {
+    padding: 3.43vw 5.60vw 0 5.88vw;
+  }
+
+  .main-logo {
+    width: 22vw;
+    height: 5.10vw;
+  }
+
+  .group-mutual {
+    display: none;
+  }
+
+  .curved-line {
+    /* display: none; */
+    margin-top: 3rem;
+  }
+
+  .card-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .card p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .landing-contact .landing-form form input {
+    width: 100%;
+  }
+
+  .t-and-c {
+    width: 80vw;
+  }
+
+  .card p {
+    max-width: 100%;
+  }
+  .philosophy h2{
+    margin-top: 7vw;
+    margin-bottom: 0;
+  }
+
+  .partnership-program .curved-line {
+    margin-top: 0;
+  }
+
+  .hero-container {
+    padding: 3.43vw 5.6vw 0 5.88vw;
+  }
+  .p-m-left h2{
+    margin-top: 5vw;
+    margin-bottom: 0vw;
+
+  }
+
+  .callback-container form {
+    gap: 3vw;
+  }
+
+}
+
+
+
+@media only screen and (min-width:768px) {
+  .header {
+    /* position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 15px rgb(104 63 219 / 10%) */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+  .main-logo {
+    width: 35vw;
+    height: 8vw;
+    max-width: 150px;
+    max-height: 50px;
+  }
+
+  .about-btn-ios {
+    padding-top: 0;
+  }
+
+  .about-btn-ios>p {
+    padding-top: 1.5%;
+  }
+
+  .about-btn>p {
+    margin: 0;
+  }
+
+  .nav-dl-btn {
+    /* width: fit-content;
+    height: fit-content; */
+    background-color: #3F3F3F;
+    margin: 0 auto;
+    margin-top: 6vw;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1rem;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+    height: 80%;
+    width: 200px;
+  }
+
+  .landing-container {
+    margin: 2.78vw 3.30vw 0 4.44vw;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition-duration: 00ms;
+    z-index: 2;
+  }
+
+  .active-nav {
+    transform: translateX(0%);
+    transition-duration: 600ms;
+    box-shadow: 0px 0px 100vw #000000;
+
+  }
+
+  nav a {
+    margin: 2rem 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .triangle-icon {
+    display: none;
+  }
+
+  .cylindrical-icon {
+    display: none;
+  }
+
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-left h2,.main-heading-style {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .about-left p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .landing-container .about-right .discovery-img {
+    /* height: 100%; */
+    max-width: 90vw;
+    min-height: 314px;
+  min-width: 288px;
+  }
+
+  .heading-style-one {
+    font-size: 28px;
+    line-height: 37.8px;
+  }
+
+  .mfunds-main-para {
+    font-size: 18px;
+    line-height: 28.8px;
+    /* margin-top: 0; */
+    margin-bottom: 4vw;
+  }
+
+  .purple-circle {
+    margin-right: 3vw;
+    height: 15px;
+    width: 15px;
+  }
+
+  .pointer p {
+    width: 88%;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 3vw;
+  }
+
+  .about-btn-group-mobile {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .about-btn-group-lg {
+    display: none;
+  }
+
+  .mutual-funds {
+    margin-top: 15vw;
+  }
+
+  .big-counter {
+    top: 5vw;
+    font-size: 22vw;
+    left: 4vw;
+    line-height: 11.5vw;
+  }
+
+  .counter-top-text {
+    top: 25vw;
+    left: 0vw;
+    line-height: 4.65vw;
+    font-size: 5vw;
+  }
+
+  .working-one-image {
+    height: 75vw;
+    width: 119vw;
+    margin-left: -27vw;
+
+  }
+
+  .working-two-img {
+    width: 55.2vw;
+    height: 74.42vw;
+    margin-top: 0.5rem;
+    margin-left: -5vw;
+  }
+
+  .working-two .big-counter {
+    left: 0vw;
+  }
+
+  .working-two .counter-top-text {
+    left: -.8rem;
+  }
+
+  .working-three-img {
+    width: 92.76vw;
+    height: 96.42vw;
+    display: flex;
+    margin-left: -1vw;
+  }
+
+  .working-three .big-counter {
+    top: 10vw;
+  }
+
+  .working-three .counter-top-text {
+    top: 30vw;
+    left: 3vw;
+  }
+
+  .curved-line {
+    height: 114vw;
+    width: 46.86vw;
+    position: absolute;
+    right: 22.13vw;
+    top: 65vw;
+  }
+
+  .invest-dl-btn {
+    width: 50vw;
+  }
+
+  .features {
+    margin-top: 12.9vw;
+  }
+
+  .card-container {
+    margin-top: 0;
+    row-gap: 6vw;
+  }
+
+  .card img {
+    height: 78px;
+  }
+
+  .card p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .para-style-one {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .coming-soon-container {
+    margin-top: 5vw;
+  }
+
+  .coming-soon-container p {
+    margin: 0px 0 0 2vw;
+    font-size: 10vw;
+    line-height: 12vw;
+  }
+
+  .coming-soon-container img {
+    height: 60vw;
+    width: 59vw;
+  }
+
+  .landing-form {
+    border-radius: 8px;
+    width: 80vw;
+  }
+
+  .landing-contact form {
+    /* gap: 3vw; */
+
+  }
+
+  .landing-contact form input {
+    /* width: 517px; */
+    /* width: 34vw; */
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    padding-left: .5rem;
+  }
+
+  .landing-contact input::placeholder,
+  textarea::placeholder {
+    font-size: 16px;
+    line-height: 30px;
+
+  }
+
+  .landing-contact form textarea {
+    width: 100vw;
+    height: 15vh;
+    padding-left: .5rem;
+  }
+
+  .companies-logo-container img {
+    width: 84px;
+    height: 42px;
+  }
+
+  .founder-left {
+    min-width: 100%;
+  }
+
+  .founder-info {
+    max-width: 100%;
+    font-size: 19.2px;
+    line-height: 28.8px;
+  }
+
+  .founder-img {
+    min-width: 60vw;
+    min-height: 60vw;
+    height: 70vw;
+    width: 70vw;
+  }
+
+  .team-sub-container img {
+    height: 60vw;
+    width: 60vw;
+  }
+
+  .philosophy p {
+    font-size: 19px;
+    line-height: 28.8px;
+  }
+
+  .founder-left .full-name {
+    font-size: 28.8px;
+    line-height: 38.4px;
+  }
+
+  .founder-designation {
+    font-size: 22.4px;
+    line-height: 38.4px;
+  }
+
+  .founder-left button {
+    font-size: 16px;
+    line-height: 28.8px;
+  }
+
+  .heading-style-two {
+    font-size: 22.4px;
+    line-height: 33.8px;
+  }
+
+  .team-sub-container p {
+    font-size: 19.2px;
+    line-height: 25.6px;
+  }
+
+  /* Partnership */
+
+  .partnership-main {
+    flex-wrap: wrap;
+    margin-bottom: 4.5vw;
+  }
+  
+  .partnership-main>img {
+    height: unset;
+    width: 95%;
+
+  }
+  .join-partner-btn{
+    display: none;
+  }
+  .join-partner-btn-mobile{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8.33vw;;
+  }
+
+  .b-card-container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6vw;
+  }
+
+  .benefits .card {
+    width: 100%;
+  }
+
+  .b-card-container .card-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .partnership-program .working-one-image {
+    margin-left: -30vw;
+  }
+
+  .partnership-program .working-two-img {
+    margin-left: -10vw;
+  }
+
+  .partnership-program .working-three-img {
+    margin-left: -5vw;
+  }
+
+  .p-m-left>p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .b-card-container .card-content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .callback-container form>input {
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 10px;
+
+  }
+
+  .callback-container form>input[type='submit'] {
+    /* font-size: 14.4px;
+    line-height: 21.6px; */
+    border-radius: 10px;
+  }
+
+  .add-partner {
+    justify-content: center;
+  }
+
+  .add-partner h4 {
+    font-size: 28px;
+    line-height: 42px;
+    margin-top: 0;
+  }
+
+  .add-partner form>input,
+  .input-box {
+    /* width: 60vw; */
+    width: 100%;
+    height: 40px;
+    border-radius: 1.30vw;
+    margin-bottom: 10px;
+  }
+
+  .input-box input {
+    border-radius: 1.30vw;
+  }
+
+  .input-box {
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .add-partner button {
+    margin-bottom: 0;
+  }
+
+  .otp-mainpara {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .otp-container {
+
+    margin-bottom: 10.0000122222px;
+
+  }
+  .otp-mainpara span:last-child {
+    font-size: 15px;
+  }
+  .re-otp {
+    margin-bottom: 10px;
+  }
+  .mainArticleContainer>div>div>:first-child {
+   display: none;
+}
+ .mainArticleContainer img{
+   max-width: 100%;
+ }
+ .main-blog-style{
+   width: 95%;
+ }
+ .breadcrumb{
+   padding-left: 5px;
+ }
+ .breadcrumb>li::after {
+  padding: 0 3px;
+}
+}
+
+@media (min-width:601px) and (max-width: 767px) {
+  .main-logo {
+    width: 20vw;
+    height: 4.63vw;
+  }
+
+  .add-partner form>input,
+  .input-box {
+    width: 41vw;
+    font-size: 20px;
+    line-height: 36px;
+    border-radius: 0.976vw;
+  }
+
+  .input-box {
+    padding-left: 2px;
+  }
+
+  .add-partner button {}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:991px) {
+  .main-logo {
+    /* width: 15vw;
+    height: 3.47vw; */
+  }
+
+  .about-btn-ios {
+    /* padding-top: 3%; */
+  }
+
+  .discovery-img {
+    /* margin-top: 3.33vw; */
+  }
+
+  .mutual-funds {
+    margin-top: 5vw;
+  }
+
+  .working-one-image {
+    height: 58vw;
+    width: 85vw;
+    margin-left: 0;
+
+  }
+
+  .working-two-img {
+    width: 39.76vw;
+    height: 54.29vw;
+    margin-top: 0.5rem;
+  }
+
+  .working-three-img {
+    width: 62.76vw;
+    height: 63.29vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: 0vw;
+  }
+
+  .curved-line {
+    height: 83vw;
+    width: 41.86vw;
+    right: 21vw;
+    top: 40vw;
+  }
+
+  .group-mutual {
+    /* display: none; */
+  }
+
+  .landing-contact form input {
+    /* width: 34vw; */
+  }
+
+  .coming-soon-container {
+    margin-top: 5vw;
+  }
+
+  .coming-soon-container p {
+    margin: 0px 0 0 2vw;
+    font-size: 10vw;
+    line-height: 12vw;
+  }
+
+  .coming-soon-container img {
+    height: 60vw;
+    width: 59vw;
+  }
+
+  .founder-left {
+    min-width: 100%;
+    /* max-width: 100vw; */
+  }
+
+  .founder-info {
+    max-width: 100%;
+  }
+
+  .founder-img {
+    /* margin: 0 auto 0 auto; */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nav-dl-btn-container {}
+
+  nav {
+    display: flex;
+  }
+
+  .about-btn-ios {
+    /* padding-top: 2%; */
+  }
+
+  .discovery-img {
+    margin-top: 0;
+  }
+
+  .group-mutual {
+    top: 70vw;
+    left: 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .nav-dl-btn {
+    width: 18.52vw;
+    height: 4.4vw;
+    border-radius: .6vw;
+    font-size: 16px;
+  }
+
+  .about-left h2,.main-heading-style {
+    font-size: 38px;
+    line-height: 57px;
+  }
+
+  .about-btn {
+    width: 18.52vw;
+    font-size: 1.46vw;
+    height: 4.16vw;
+    border-radius: .694vw;
+  }
+
+  .about-btn>p {
+    font-size: 1.11vw;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 1vw;
+  }
+
+  .heading-style-one {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .group-mutual {
+    top: 77vw;
+    left: 0;
+  }
+
+  .cylindrical-icon {
+    right: 40vw;
+    top: 45vw;
+  }
+
+  .mutual-funds h2 {
+    /* margin-bottom: 2.22vw; */
+  }
+
+  .mfunds-main-para {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .pointer p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .card img {
+    height: 90px;
+  }
+
+  .card p {
+    font-size: 18px;
+    line-height: 26px;
+
+  }
+
+  .card-container {
+    column-gap: 6vw;
+    row-gap: 2vw;
+  }
+
+  .counter-top-text {
+    font-size: 3.5vw;
+  }
+
+  .big-counter {
+    font-size: 18vw;
+    top: -5vw;
+  }
+
+  .working-three .counter-top-text {
+    margin-left: 9vw;
+  }
+
+  .working-one-image {
+
+    height: 44.72vw;
+    width: 67.36vw;
+    margin-left: 8vw;
+  }
+
+  .working-two-img {
+    width: 33.76vw;
+    height: 43.29vw;
+    margin-top: 4.5rem;
+    margin-left: 4vw;
+  }
+
+  .working-two .working-text-container {
+    left: -5vw;
+  }
+
+  .working-three-img {
+    width: 54.76vw;
+    height: 53.29vw;
+    margin-right: 8vw;
+  }
+
+  .b-card-container .card-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .callback-container form>input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .callback-container form>input[type='submit'] {
+    font-size: 14.4px;
+    line-height: 21.6px;
+  }
+
+  .add-partner h4 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .add-partner form>input,
+  .input-box {
+    width: 41vw;
+    height: 5.27vw;
+    font-size: 20px;
+    line-height: 36px;
+    border-radius: 0.976vw;
+  }
+
+  .input-box {
+    padding-left: 10px;
+  }
+
+  .input-box input {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .add-partner button {
+    /* border-radius: 0.976vw;
+    height: 5.27vw;
+    width: 20.898vw;
+    font-size: 16px;
+    line-height: 24px; */
+  }
+
+}
+
+/* @media (min-width: 1025px) and (max-width: 1440px) { */
+@media only screen and (min-width: 1025px) {
+  .nav-dl-btn {
+    font-size: 1.38vw;
+  }
+
+  .about-left h2,.main-heading-style {
+    font-size: 38px;
+    line-height: 57px;
+  }
+
+  .landing-contact .about-btn {
+    width: 18.52vw;
+    font-size: 1.46vw;
+    height: 4.16vw;
+    border-radius: .694vw;
+  }
+
+  .about-btn {
+    border-radius: 0.694vw;
+    font-size: 1.46vw;
+    height: 4.16vw;
+    width: 18.52vw;
+  }
+
+  .heading-style-one {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .mutual-funds h2 {
+    /* margin-bottom: 2.22vw; */
+  }
+
+  .group-mutual {
+    /* top: 907px;
+    left: 0; */
+  }
+
+  .cylindrical-icon {
+    right: 42vw;
+    top: 45vw;
+  }
+
+  .mfunds-main-para {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .list-container>div {
+    row-gap: 1vw;
+  }
+
+  .pointer p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .card img {
+    height: 90px;
+  }
+
+  .card p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .landing-container .card {
+    margin-left: 0;
+    flex-basis: 100%;
+    max-width: 220px;
+  }
+
+  .card-container {
+    column-gap: 11vw;
+    row-gap: 3vw;
+  }
+
+  .counter-top-text {
+    font-size: 3.5vw;
+    left: 6vw;
+  }
+
+  .working-two .counter-top-text {
+    left: 8vw;
+  }
+
+  .big-counter {
+    font-size: 18vw;
+    top: -5vw;
+    left: 8vw;
+  }
+
+  .working-three .counter-top-text {
+    margin-left: 9vw;
+  }
+
+  .working-one-image {
+    /* height: 644px; */
+    height: 47.72vw;
+    /* width: 957px; */
+    width: 67.36vw;
+    margin-left: 6vw;
+  }
+
+  .working-two-img {
+    width: 33.76vw;
+    height: 43.29vw;
+    margin-top: 4.5rem;
+    margin-left: 3vw;
+  }
+
+  .working-two .working-text-container {
+    /* left: -2vw; */
+  }
+
+  .working-three-img {
+    width: 54.76vw;
+    height: 53.29vw;
+  }
+
+  .curved-line {
+    top: 37vw;
+  }
+
+  .stock-tech-container p {
+    /* line-height: 44px; */
+  }
+
+  .benefits .card {
+    /* max-width: 347px; */
+    text-align: center;
+  }
+
+  .card-title {
+    /* max-width: 347px; */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-btn>p {
+    margin: 0;
+  }
+
+  .group-mutual {
+    top: 68vw;
+  }
+
+  .discovery-img {
+    /* margin-top: 3vw; */
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+
+  body {
+    box-sizing: border-box;
+  }
+
+  .header {
+    padding: 21px 93px 21px 128px;
+  }
+
+  nav a {
+    margin-left: 58px;
+  }
+
+  .nav-dl-btn {
+    font-size: 20px;
+    margin-left: 74px;
+  }
+
+  .landing-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 27.36px 95px 0 128px;
+  }
+
+  .about-left h2{
+    margin-top: 150px;
+  }
+
+  .about-btn-group {
+    margin-top: 100px;
+    flex-wrap: nowrap;
+  }
+
+  .about-btn {
+    font-size: 21px;
+    border-radius: 10px;
+  }
+
+  .about-btn-ios>p {
+    font-size: 17.8px;
+  }
+
+  .cylindrical-icon {
+    right: 42vw;
+    top: 620px;
+  }
+
+  .group-mutual {
+    top: 907px;
+    left: 0;
+  }
+
+  .mfunds-main-para {
+    margin: 32px 0;
+  }
+
+  .list-container {
+    column-gap: 150px;
+    flex-wrap: nowrap;
+  }
+
+  .list-container>div {
+    row-gap: 15px;
+  }
+
+  .purple-circle {
+    margin-right: 27px;
+  }
+
+  .features {
+    margin-top: 120px;
+  }
+
+  .working {
+    margin-top: 120px;
+  }
+
+  .card-container {
+    column-gap: 165px;
+    row-gap: 40px;
+  }
+
+  .card {
+    max-width: 245px;
+  }
+
+  .counter-top-text {
+    font-size: 50px;
+    top: 190px;
+    line-height: 67px;
+    left: 170px;
+  }
+
+  .working-three .counter-top-text {
+    margin-left: 130px;
+  }
+
+  .big-counter {
+    font-size: 260px;
+    top: -80px;
+    line-height: 200px;
+    left: 200px;
+  }
+
+  .working-one-image {
+    display: flex;
+    margin: 0 auto;
+    height: 644px;
+  }
+
+  .working-two-img {
+    margin-left: 100px;
+  }
+
+  .working-three-img {
+    margin-top: 5rem;
+    margin-right: 120px;
+  }
+
+  .working-two .working-text-container,
+  .working-three .working-text-container {
+    top: 100px;
+    left: 0;
+  }
+
+  .working-two .counter-top-text {
+    left: 200px;
+  }
+
+  .working-two .working-text-container {
+    left: -50px;
+  }
+
+  .working-three .working-text-container {
+    top: 150px;
+    left: -35px;
+  }
+
+  .curved-line {
+    top: 500px;
+    right: 350px;
+  }
+
+  .coming-soon-container {
+    margin-top: 60px;
+  }
+
+  .coming-soon-container p {
+    margin: 0px 33px 0 70px;
+  }
+
+  .invest-stocks {
+    margin-top: 130px;
+  }
+
+  .stock-tech-section {
+    margin-top: 130px;
+  }
+
+  .landing-contact {
+    margin-top: 122px;
+  }
+
+  .landing-form {
+    margin-top: 62px;
+    margin-bottom: 133px;
+  }
+
+  .landing-form form {
+    padding-left: 50px;
+    padding-right: 54px;
+    gap: 28px;
+    padding-top: 50px;
+  }
+
+  .landing-form input {
+    box-sizing: border-box;
+  }
+
+  .landing-form .invest-dl-btn {
+    margin-bottom: 50px;
+  }
+
+ 
+
+  .philosophy h2 {
+    margin-top: 50px;
+  }
+
+  .philosophy p:first-of-type {
+    margin-bottom: 40px;
+  }
+
+  .philosophy-vector {
+    margin-left: -4.5rem;
+  }
+
+  .our-team {
+    margin-bottom: 94px;
+  }
+
+  .founder-section {
+    margin-bottom: 100px;
+  }
+
+  .companies-logo-container {
+    gap: 102px;
+  }
+
+  .companies-logo-container:first-of-type {
+    margin-bottom: 52px;
+    margin-top: 85px;
+  }
+
+  .team-sub-container {
+    margin: 60px 0;
+    column-gap: 291px;
+  }
+
+  .t-and-c {
+    width: 850px;
+  }
+
+  .partnership-program .working {
+    margin-top: 118px;
+    margin-bottom: 118px;
+  }
+
+  .hero-container {
+    padding: 21px 120px 21px 128px;
+  }
+
+  .income-calc-text {
+    margin-bottom: 50px;
+  }
+
+  .callback-container {
+    margin-bottom: 83px;
+  }
+
+  .callback-container h2 {
+    margin-bottom: 50px;
+  }
+
+  .callback-container form {
+    gap: 20px;
+    border-radius: 20px;
+  }
+
+  .callback-container form input {
+    border-radius: 10px;
+  }
+
+  .partnership-main {
+    margin-bottom: 116px;
+  }
+
+  .p-m-left :nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: 36px;
+  }
+
+  .benefits .heading-style-one {
+    margin-bottom: 4.166vw;
+  }
+
+  .add-partner {
+    border-radius: 16px;
+  }
+
+  .add-partner h4 {
+    margin-top: 86px;
+  }
+
+  .add-partner form>input[type="text"] {
+    margin-top: 32px;
+  }
+
+  .add-partner form>input,
+  .input-box {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .input-box {
+    margin-bottom: 40px;
   }
 }
